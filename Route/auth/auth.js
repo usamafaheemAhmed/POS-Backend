@@ -53,64 +53,12 @@ const handleAuth = async (req, res) => {
             secure: true,
         });
 
-
-
         res.status(200).json({ accessToken });
     } else {
         res.status(401).json({ "message": "Unauthorized: Password does not match" });
     }
 };
 
-// Registration (Sign-up) handler
-const handleRegistration = async (req, res) => {
-    const { phone_number, password, account_type } = req.body;
-
-    if (!phone_number || !password || !account_type) {
-        return res.status(400).json({ "message": "Phone number, password, and account type are required" });
-    }
-
-    // Validate request data against user schema
-    const { error } = UserSchema.validate(req.body);
-    if (error) {
-        return res.status(400).json({ message: error.details[0].message });
-    }
-
-    try {
-        // Check if user already exists
-        const existingUser = await UserDetails.findOne({ phone_number });
-        if (existingUser) {
-            return res.status(409).json({ message: "User already exists" });
-        }
-
-        // Hash password
-        const hashedPassword = await bcrypt.hash(password, 10);
-
-        // Create new user document
-        const newUser = new UserDetails({
-            phone_number,
-            password: hashedPassword,
-            account_type,
-            roles: ["User"], // Default role, adjust as needed
-            // Include other fields if necessary
-        });
-
-        const savedUser = await newUser.save();
-
-        // Send full user data (excluding password)
-        const userData = {
-            id: savedUser._id,
-            phone_number: savedUser.phone_number,
-            account_type: savedUser.account_type,
-            roles: savedUser.roles,
-            // Include other fields if necessary
-        };
-
-        res.status(201).json({ message: "User registered successfully", user: userData });
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: "Internal server error" });
-    }
-};
 
 // Define routes
 MyRouter.post("/", handleAuth);

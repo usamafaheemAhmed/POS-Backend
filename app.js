@@ -41,12 +41,17 @@ app.use("/api/Register", require('./Route/Register'));
 app.use("/api/Login", require('./Route/auth/auth'));
 app.use("/api/logout", require('./Route/auth/logout'));
 
+app.use('/api/allInOne', require('./Route/allInOne.js'));
+
 // app.use("/api/refresh", require('./Route/auth/refresh'));
 app.use(verifyJWT);
 
 
 // Routes
-app.use('/api/BismillahAllInOne', require('./Route/BismillahAllInOne.js'));
+app.use('/api/Menu', require('./Route/Menu.js'));
+app.use('/api/Deals', require('./Route/Deals.js'));
+app.use('/api/AddOn', require('./Route/AddOn.js'));
+
 
 
 

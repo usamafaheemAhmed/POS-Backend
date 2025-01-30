@@ -2,3 +2,8 @@
 20250129	11:02:50	9222ca83-6fdf-4cf6-8b1e-e62149456bcb	UNAUTHORIZED ATTEMPT	::1	PostmanRuntime/7.43.0	/api/BismillahAllInOne
 20250129	11:40:07	7401ed06-9796-412e-9d44-226e7ca6254a	UNAUTHORIZED ATTEMPT	::1	PostmanRuntime/7.43.0	/api/Login
 20250129	12:16:40	2ad92fa0-23c1-4c9d-88aa-0902c78eaaed	UNAUTHORIZED ATTEMPT	::ffff:127.0.0.1	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0	/api/BismillahAllInOne
+20250130	00:24:08	c3abf31b-35eb-405b-af43-50b579d13b56	UNAUTHORIZED ATTEMPT	::1	PostmanRuntime/7.43.0	/api/Deals
+20250130	15:57:25	138b8222-bb69-4ee9-a673-7d007dcaa8da	UNAUTHORIZED ATTEMPT	::ffff:127.0.0.1	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0	/api/allInOne
+20250130	15:58:10	59320220-c57c-444a-9f09-37e1559648ab	UNAUTHORIZED ATTEMPT	::ffff:127.0.0.1	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0	/Register
+20250130	16:01:10	786072e4-22ee-4f00-b26f-c14c30fb5de6	UNAUTHORIZED ATTEMPT	::1	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36	/favicon.ico
+20250130	16:01:12	55979ce8-2c7d-485d-8c87-732b9e102dbe	UNAUTHORIZED ATTEMPT	::1	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36	/favicon.ico

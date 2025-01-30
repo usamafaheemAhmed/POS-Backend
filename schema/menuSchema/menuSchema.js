@@ -7,7 +7,7 @@ const sizeSchema = Joi.object({
     extraToppingPrice: Joi.number().required()
 });
 
-const bismillahSchema = Joi.object({
+const menuSchema = Joi.object({
     // id: Joi.string().required(),
     clientFK: Joi.string(),
     category: Joi.string().required(),
@@ -19,4 +19,4 @@ const bismillahSchema = Joi.object({
     discountedPrice: Joi.number(),
 });
 
-module.exports = bismillahSchema;
+module.exports = menuSchema;

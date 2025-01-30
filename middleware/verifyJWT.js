@@ -9,7 +9,7 @@ const verifyJWT = (req, res, next) => {
     if (!authHeader?.startsWith('Bearer ')) {
         unauthorizedAccessAttempt(req);
         // return res.status(401).json({ "message": "You are unauthorized for this task" })
-        return res.status(404).json({ "message": "Not found" })
+        return res.status(404).json({ "message": "Not found JWT" })
     }
 
     const token = authHeader.split(' ')[1];

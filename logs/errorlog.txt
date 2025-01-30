@@ -5,3 +5,5 @@
 20250129	11:17:00	03f865da-c4d6-4b22-b5e1-8b3418050959	GET	::1	PostmanRuntime/7.43.0	/api/BismillahAllInOne
 20250129	11:18:33	153695d4-481d-4c65-aebd-fc6a63e98340	GET	::1	PostmanRuntime/7.43.0	/api/BismillahAllInOne
 20250129	11:19:41	eabea4ef-9d0b-4844-9917-d3ae6077964c	GET	::1	PostmanRuntime/7.43.0	/api/BismillahAllInOne
+20250130	00:34:50	1520ceb4-8962-409e-9dc3-cd78167ada63	GET	::1	PostmanRuntime/7.43.0	/api/Deals
+20250130	01:08:10	98b2d50b-aa7a-4e30-a974-96da56b070f7	GET	::1	PostmanRuntime/7.43.0	/api/AddOn
